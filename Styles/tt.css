@@ -1,0 +1,104 @@
+﻿.w1024{
+	width: 1024px;
+	margin: 0px auto;
+	position: relative;
+}
+
+.menu-background-2{
+	background-color:rgb(116,105,87);
+}
+.menu-background-3{
+	padding-left:5px;
+	background-color: rgb(79, 70, 75);
+	color:yellow;
+}
+
+.menu-background-2:hover,.menu-background-2.selected{
+	background-color:#4F464B;
+}
+
+.HomeMenuContainer .leftMargin{
+	margin-left:5px;
+}
+.HomePanel{
+	min-width:1024px;
+	width:100%;
+}
+.HomeHeaderContainer{
+	height:85px;
+	overflow:hidden;
+}
+.HomeHeader{
+	height:100%;
+	position:relative;
+}
+.HomeHeader .Branding{
+	float:left;
+	margin-top:20px;
+}
+.TopNavigator{
+	right:0px;
+	position:absolute;
+	bottom:0px;
+}
+.TopNavigator ul {
+	list-style-type: none;
+	float:left;
+}
+.TopNavigator li{
+	float:left;
+	padding:0px 5px;
+}
+.TopNavigator a{
+	color: #797075;
+	text-decoration:none;
+	font-family:Impact
+}
+
+.HomeBannerContainer{
+	/*background-image:url('../IMG/texturebanner.JPG');
+	background-repeat:repeat-x;*/
+	border-style:solid none;
+	border-color:#4F464B
+}
+.HomeBannerContainer .BannerContainer{
+	overflow:hidden;
+}
+
+.MainMenu{
+	background:#A99E98
+}
+.HomeMenuContainer a{
+	text-decoration:none;
+	color:white;
+	/*font-family:Tahoma, Impact, sans-serif;*/
+	font-weight:bold;
+}
+.MainMenu.selected,.MainMenu:hover{
+	background:#8D8473
+}
+
+/*.tabMenuLink a{
+	text-decoration:none;
+	color:white;
+	font-family:Tahoma, Impact, sans-serif;
+}*/
+.tabMenuLink{
+	float:left;
+	margin-left:5px;
+}
+#divContactDetails p{
+	color:#4F464B;
+}
+
+#projectsContainer .project-item{
+	background-color:rgb(116,105,87);
+	padding-left:5px;
+	border-bottom-style:dotted;
+	border-bottom-color:white;
+	border-bottom-width:1px;
+}
+
+#projectsContainer .project-item:hover{
+	background-color:rgb(79, 70, 75);
+}
