@@ -5,16 +5,16 @@
 }
 
 .menu-background-2{
-	background-color:rgb(116,105,87);
+	background-color:rgb(164,159,149);
 }
 .menu-background-3{
-	padding-left:5px;
-	background-color: rgb(79, 70, 75);
-	color:yellow;
+	padding:5px;
+	background-color: rgb(81, 66, 45);
+	color:rgb(249, 225, 189);
 }
 
-.menu-background-2:hover,.menu-background-2.selected{
-	background-color:#4F464B;
+.menu-background-2 a:hover,.menu-background-2 a.selected{
+	color: rgb(81, 66, 45);
 }
 
 .HomeMenuContainer .leftMargin{
@@ -25,7 +25,7 @@
 	width:100%;
 }
 .HomeHeaderContainer{
-	height:85px;
+	height:200px;
 	overflow:hidden;
 }
 .HomeHeader{
@@ -34,7 +34,7 @@
 }
 .HomeHeader .Branding{
 	float:left;
-	margin-top:20px;
+	margin-top:120px;
 }
 .TopNavigator{
 	right:0px;
@@ -66,26 +66,30 @@
 }
 
 .MainMenu{
-	background:#A99E98
+	background:#A99E98;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-weight:bold;
+	
 }
 .HomeMenuContainer a{
 	text-decoration:none;
 	color:white;
-	/*font-family:Tahoma, Impact, sans-serif;*/
-	font-weight:bold;
+	/*font-family:Tahoma, Impact, sans-serif;
+	font-weight:bold;*/
 }
 .MainMenu.selected,.MainMenu:hover{
 	background:#8D8473
 }
 
-/*.tabMenuLink a{
-	text-decoration:none;
-	color:white;
-	font-family:Tahoma, Impact, sans-serif;
-}*/
+.tabMenuLink a{
+	border-left:1px white solid;
+}
 .tabMenuLink{
 	float:left;
 	margin-left:5px;
+	margin-right:5px;
+	padding:8px 0px 8px 0px;
 }
 #divContactDetails p{
 	color:#4F464B;
@@ -101,4 +105,14 @@
 
 #projectsContainer .project-item:hover{
 	background-color:rgb(79, 70, 75);
+}
+.project-item a{
+	color:rgb(207, 207, 207);
+	font-size: 0.9em;
+}
+.project-item a span{
+	width:90px;
+	display:inline-block;
+	margin-right:15px;
+	text-align:right;
 }
