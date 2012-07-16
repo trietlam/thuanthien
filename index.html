@@ -3,6 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>Thuan Thien</title>
+    <link href='http://fonts.googleapis.com/css?family=Francois+One|PT+Sans+Narrow' rel='stylesheet' type='text/css'/>
     <link rel="stylesheet" type="text/css" href="Styles/reset.css"/>
     <link rel="stylesheet" type="text/css" href="Styles/tt.css"/>
     
@@ -20,6 +21,8 @@
 		animatedcollapse.addDiv('divContactDetails', fade=1)
 		animatedcollapse.addDiv('projectsContainer', fade=1)
 		animatedcollapse.addDiv('postureContainer', fade=1)
+		animatedcollapse.addDiv('panelCategory', 'fade=1, group=projects')
+		animatedcollapse.addDiv('panelContractValue', 'fade=1, group=projects')
 		//additional addDiv() call...
 		animatedcollapse.init()
 	</script>
@@ -54,14 +57,78 @@
     	<div id="projectsContainer" style="display:none">
     		<div class="menu-background-2" style="overflow:auto">
     			<div class="w1024">
-    				<div class="tabMenuLink"><a href="javascript:selectMenu()">&nbsp;&nbsp;Category</a></div>
-    				<div class="tabMenuLink"><a href="#">&nbsp;&nbsp;Geography</a></div>
-    				<div class="tabMenuLink"><a href="#">&nbsp;&nbsp;Contract Value</a></div>
+    				<div class="tabMenuLink"><a id="tabMenuCategory" href="javascript:selectTabMenu('projectsContainer','tabMenuCategory','panelCategory')">&nbsp;&nbsp;Category</a></div>
+    				<div class="tabMenuLink"><a id="tabMenuGeography" href="javascript:selectTabMenu('projectsContainer','tabMenuCategory','panelCategory')">&nbsp;&nbsp;Geography</a></div>
+    				<div class="tabMenuLink"><a id="tabMenuContract" href="javascript:selectTabMenu('projectsContainer','tabMenuContract','panelContractValue')">&nbsp;&nbsp;Contract Value</a></div>
     			</div>
 	    	</div>
 	    	<div id="panelCategory" style="display:none">
 	    	<div id="categoryHeader" class="menu-background-3">
 	    		<div class="w1024">Agriculture and Industrial Building</div>
+	    	</div>
+	    	<div class="project-list" id="listAgriculture">
+	    		<ul>
+	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>HOC MON</span>Well drilling systems - Water treatment station</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="#"><span>TAN PHU</span>Printing factory - KHUYEN HOC PHIA NAM Printing company</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="#"><span>5th DISTRICT</span>Warehouse - TNXP Investment &amp; Construction Corp</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="#"><span>BINH DUONG</span>THANH TAN Chicken farm</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="#"><span>BINH DUONG</span>THANH TAN Pig farm</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="#"><span>HOC MON</span>Main Warehouse - NHI XUAN Manufacture factory of animal feed products</a></div></div></li>
+	    		</ul>
+	    	</div>
+	    	<div class="menu-background-3">
+	    		<div class="w1024" >Cultural Project</div>
+	    	</div>
+			<div class="project-list">
+	    		<ul>
+	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>HOC MON</span>Martyrs Memorial NGA BA GIONG</a></div></div></li>
+	    		</ul>
+	    	</div>  		
+	    	<div class="menu-background-3">
+	    		<div class="w1024" >Traffic Infrastructure - Landscape</div>
+	    	</div>
+	    	<div class="project-list">
+	    		<ul>
+	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>VUNG TAU</span>Service Roads - SON THUY Resort</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>RACH CHIEC</span>Pillars signal, pillars lamp foundation - SAIGON river &amp; DONG NAI river connexion through RACH CHIEC waterway</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>CAT LAI</span>Provisional Road - CAT LAI Residence area</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>CAT LAI</span>Third Cell Leveling, area 50ha - CAT LAI Residence area</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>DA NANG</span>Retaining walls and reinforced talus roof 6th section - BAI BUT beach resort</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>DA NANG</span>Bending Retaining walls 15th section - BAI BUT beach resort</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>BINH DUONG</span>Service roads - THANH TAN farm</a></div></div></li>
+	    		</ul>
+	    	</div>
+	    	<div class="menu-background-3">
+	    		<div class="w1024" >Services Building</div>
+	    	</div>
+	    	<div class="project-list">
+	    		<ul>
+	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>BINH DUONG</span>Multi-fonction activities rooms - Education training &amp; employment setlement 4th School</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="#"><span>HOC MON</span>Canteen, Health center - NHI XUAN Residence area</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="#"><span>BINH DUONG</span>Disinfection area, Water tower, Pwer transformers, Water treatment station - THANH TAN Pig farm</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="#"><span>BINH DUONG</span>Heath center, Kitchen, Offices, Workers housing, Service box, Warehouses - THANH TAN Chicken farm</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="#"><span>HOC MON</span>Office, Equipment storage, Fence - NHI XUAN Manufacture</a></div></div></li>
+	    		</ul>
+	    	</div>
+	    	<div class="menu-background-3">
+	    		<div class="w1024" >Renovation</div>
+	    	</div>
+	    	<div class="project-list">
+	    		<ul>
+	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>1st DISTRICT</span>INVESCO Head office</a></div></div></li>
+					<li><div class="project-item"><div class="w1024"><a href="#"><span>BINH TAN</span>Project managers office - BINH TAN Investment Projects Department</a></div></div></li>
+					<li><div class="project-item"><div class="w1024"><a href="#"><span>3rd DISTRICT</span>Head office - CINCO Real estate trading company</a></div></div></li>
+					<li><div class="project-item"><div class="w1024"><a href="#"><span>1st DISTRICT</span>Head office - TNXP Public Service</a></div></div></li>
+					<li><div class="project-item"><div class="w1024"><a href="#"><span>BINH THANH</span>Head office - THUAN THIEN Investment &amp; Construction Corp.</a></div></div></li>
+	    		</ul>
+	    	</div>
+	    	<div class="menu-background-3">
+	    		<div class="w1024" >Private housing</div>
+	    	</div>
+	    	</div>
+	    	<div id="panelContractValue" style="display:none">
+	    	<div class="menu-background-3">
+	    		<div class="w1024">10.000.000.000 -------&gt; 25.000.000.000</div>
 	    	</div>
 	    	<div class="project-list" id="listAgriculture">
 	    		<ul>
@@ -130,8 +197,8 @@
     	<div id="postureContainer" style="display:none">
 	    	<div class="menu-background-2" style="overflow:auto">
     			<div class="w1024">
-    				<div class="tabMenuLink"><a href="#">| Company Profile</a></div>
-    				<div class="tabMenuLink"><a href="#">| Organization Scheme</a></div>
+    				<div class="tabMenuLink" id="tabMenuProfile"><a href="#">&nbsp;&nbsp;Company Profile</a></div>
+    				<div class="tabMenuLink" id="tabMenuOrganization"><a href="#">&nbsp;&nbsp;Organization Scheme</a></div>
     			</div>
 	    	</div>
     	</div>
