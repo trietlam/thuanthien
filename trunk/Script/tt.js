@@ -1,6 +1,7 @@
-﻿function selectMenu(menuId,toogledId) {
+﻿function selectTabMenu(parentId,menuId,toogledId) {
     var id = '#' + menuId;
-    $('.MainMenu').removeclass('selected');
+    var parentId = '#'+ parentId;
+    $(id).parent().parent().find('a').removeClass('selected');
     $(id).addClass('selected');
     animatedcollapse.toggle(toogledId);
 }
