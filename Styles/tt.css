@@ -5,12 +5,17 @@
 }
 
 .menu-background-2{
-	background-color:rgb(164,159,149);
+	/*background-color:rgb(164,159,149);*/
+	background-color:rgb(151, 141, 129);
 }
 .menu-background-3{
 	padding:5px;
-	background-color: rgb(81, 66, 45);
+	background-color: rgb(107, 94, 77);
 	color:rgb(249, 225, 189);
+	border-bottom:0.5px white solid;
+}
+.menu-background-3:hover, .menu-background-3.selected{
+	background-color:rgb(81, 66, 45);
 }
 
 .menu-background-2 a:hover,.menu-background-2 a.selected{
@@ -66,10 +71,12 @@
 }
 
 .MainMenu{
-	background:#A99E98;
+	background:rgb(168,159,150);
 	padding-top:10px;
 	padding-bottom:10px;
 	font-family: 'Francois One', sans-serif;
+	border-bottom: 0.5px #4F464B solid;
+	border-top: 0.5px #4F464B solid;
 }
 .HomeMenuContainer a{
 	text-decoration:none;
@@ -81,7 +88,11 @@
 	list-style-type:none;
 }
 .MainMenu.selected,.MainMenu:hover{
-	background:#8D8473
+	background:rgb(116, 105,87);
+}
+
+.menu-background-3 a{
+	color:rgb(249, 225, 189);
 }
 
 .tabMenuLink a{
@@ -97,8 +108,11 @@
 	color:#4F464B;
 }
 
+.project-list{
+	display:none;
+}
 #projectsContainer .project-item{
-	background-color:rgb(116,105,87);
+	background-color:rgb(151, 141, 129);
 	padding-left:5px;
 	border-bottom-style:dotted;
 	border-bottom-color:white;
@@ -106,7 +120,7 @@
 }
 
 #projectsContainer .project-item:hover{
-	background-color:rgb(81, 66, 45);
+	background-color:rgb(135, 123, 109);
 }
 .project-item a{
 	color:rgb(207, 207, 207);

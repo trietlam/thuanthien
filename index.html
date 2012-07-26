@@ -23,6 +23,16 @@
 		animatedcollapse.addDiv('postureContainer', fade=1)
 		animatedcollapse.addDiv('panelCategory', 'fade=1, group=projects, speed=2000')
 		animatedcollapse.addDiv('panelContractValue', 'fade=1, group=projects, speed=2000')
+		animatedcollapse.addDiv('listAgriculture', 'fade=1, group=projectlist')
+		animatedcollapse.addDiv('listCultural', 'fade=1, group=projectlist')
+		animatedcollapse.addDiv('listTraffic', 'fade=1, group=projectlist')
+		animatedcollapse.addDiv('listServices', 'fade=1, group=projectlist')
+		animatedcollapse.addDiv('listRenovation', 'fade=1, group=projectlist')
+		animatedcollapse.addDiv('list10bil', 'fade=1, group=projectvalue')
+		animatedcollapse.addDiv('list5bil', 'fade=1, group=projectvalue')
+		animatedcollapse.addDiv('list1bil', 'fade=1, group=projectvalue')
+		animatedcollapse.addDiv('list500mil', 'fade=1, group=projectvalue')
+		animatedcollapse.addDiv('listUnder500mil', 'fade=1, group=projectvalue')
 		//additional addDiv() call...
 		animatedcollapse.init()
 	</script>
@@ -64,7 +74,7 @@
 	    	</div>
 	    	<div id="panelCategory" style="display:none">
 	    	<div id="categoryHeader" class="menu-background-3">
-	    		<div class="w1024">Agriculture and Industrial Building</div>
+	    		<div class="w1024"><a href="javascript:selectCategoryMenu('listAgriculture')">Agriculture and Industrial Building</a></div>
 	    	</div>
 	    	<div class="project-list" id="listAgriculture">
 	    		<ul>
@@ -77,17 +87,17 @@
 	    		</ul>
 	    	</div>
 	    	<div class="menu-background-3">
-	    		<div class="w1024" >Cultural Project</div>
+	    		<div class="w1024" ><a href="javascript:selectCategoryMenu('listCultural')">Cultural Project</a></div>
 	    	</div>
-			<div class="project-list">
+			<div class="project-list" id="listCultural">
 	    		<ul>
 	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>HOC MON</span>Martyrs Memorial NGA BA GIONG</a></div></div></li>
 	    		</ul>
 	    	</div>  		
 	    	<div class="menu-background-3">
-	    		<div class="w1024" >Traffic Infrastructure - Landscape</div>
+	    		<div class="w1024" ><a href="javascript:selectCategoryMenu('listTraffic')">Traffic Infrastructure - Landscape</a></div>
 	    	</div>
-	    	<div class="project-list">
+	    	<div class="project-list" id="listTraffic">
 	    		<ul>
 	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>VUNG TAU</span>Service Roads - SON THUY Resort</a></div></div></li>
 	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>RACH CHIEC</span>Pillars signal, pillars lamp foundation - SAIGON river &amp; DONG NAI river connexion through RACH CHIEC waterway</a></div></div></li>
@@ -99,9 +109,9 @@
 	    		</ul>
 	    	</div>
 	    	<div class="menu-background-3">
-	    		<div class="w1024" >Services Building</div>
+	    		<div class="w1024" ><a href="javascript:selectCategoryMenu('listServices')">Services Building</a></div>
 	    	</div>
-	    	<div class="project-list">
+	    	<div class="project-list" id="listServices">
 	    		<ul>
 	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>BINH DUONG</span>Multi-fonction activities rooms - Education training &amp; employment setlement 4th School</a></div></div></li>
     				<li><div class="project-item"><div class="w1024"><a href="#"><span>HOC MON</span>Canteen, Health center - NHI XUAN Residence area</a></div></div></li>
@@ -111,9 +121,9 @@
 	    		</ul>
 	    	</div>
 	    	<div class="menu-background-3">
-	    		<div class="w1024" >Renovation</div>
+	    		<div class="w1024" ><a href="javascript:selectCategoryMenu('listRenovation')">Renovation</a></div>
 	    	</div>
-	    	<div class="project-list">
+	    	<div class="project-list" id="listRenovation">
 	    		<ul>
 	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>1st DISTRICT</span>INVESCO Head office</a></div></div></li>
 					<li><div class="project-item"><div class="w1024"><a href="#"><span>BINH TAN</span>Project managers office - BINH TAN Investment Projects Department</a></div></div></li>
@@ -128,9 +138,9 @@
 	    	</div>
 	    	<div id="panelContractValue" style="display:none">
 	    	<div class="menu-background-3">
-	    		<div class="w1024">10.000.000.000 -------&gt; 25.000.000.000</div>
+	    		<div class="w1024"><a href="javascript:selectCategoryMenu('list10bil')">10.000.000.000 -------&gt; 25.000.000.000</a></div>
 	    	</div>
-	    	<div class="project-list">
+	    	<div class="project-list" id="list10bil">
 	    		<ul>
 	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>HOC MON</span>Canteen, Health center - NHI XUAN Residence area</a></div></div></li>
 	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>CAT LAI</span>Third Cell Leveling, area 50ha - CAT LAI Residence area</a></div></div></li>
@@ -138,9 +148,9 @@
 	    		</ul>
 	    	</div>
 	    	<div class="menu-background-3">
-	    		<div class="w1024">5.000.000.000 -------&gt; 10.000.000.000</div>
+	    		<div class="w1024"><a href="javascript:selectCategoryMenu('list5bil')">5.000.000.000 -------&gt; 10.000.000.000</a></div>
 	    	</div>
-			<div class="project-list">
+			<div class="project-list" id="list5bil">
 	    		<ul>
 	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>BINH DUONG</span>THANH TAN Chicken farm</a></div></div></li>
     				<li><div class="project-item"><div class="w1024"><a href="#"><span>BINH DUONG</span>THANH TAN Pig farm</a></div></div></li>
@@ -150,9 +160,9 @@
 	    		</ul>
 	    	</div>  		
 	    	<div class="menu-background-3">
-	    		<div class="w1024" >1.000.000.000 -------&gt; 5.000.000.000</div>
+	    		<div class="w1024" ><a href="javascript:selectCategoryMenu('list1bil')">1.000.000.000 -------&gt; 5.000.000.000</a></div>
 	    	</div>
-	    	<div class="project-list">
+	    	<div class="project-list" id="list1bil">
 	    		<ul>
 	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>PHU NHUAN</span>Complex Residence - 321 DAO DUY ANH</a></div></div></li>
 	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>HOC MON</span>Martyrs Memorial NGA BA GIONG</a></div></div></li>
@@ -161,9 +171,9 @@
 	    		</ul>
 	    	</div>
 	    	<div class="menu-background-3">
-	    		<div class="w1024" >500.000.000 -------&gt; 1.000.000.000</div>
+	    		<div class="w1024" ><a href="javascript:selectCategoryMenu('list500mil')">500.000.000 -------&gt; 1.000.000.000</a></div>
 	    	</div>
-	    	<div class="project-list">
+	    	<div class="project-list" id="list500mil">
 	    		<ul>
 	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>DA NANG</span>Retaining walls and reinforced talus roof 6th section - BAI BUT beach resort</a></div></div></li>
     				<li><div class="project-item"><div class="w1024"><a href="#"><span>3rd DISTRICT</span>Head office - CINCO Real estate trading company</a></div></div></li>
@@ -172,9 +182,9 @@
 	    		</ul>
 	    	</div>
 	    	<div class="menu-background-3">
-	    		<div class="w1024" >Under 500.000.000</div>
+	    		<div class="w1024" ><a href="javascript:selectCategoryMenu('listUnder500mil')">Under 500.000.000</a></div>
 	    	</div>
-	    	<div class="project-list">
+	    	<div class="project-list" id="listUnder500mil">
 	    		<ul>
 	    			<li><div class="project-item"><div class="w1024"><a href="#"><span></span>1 to 3 storey: Private housing</a></div></div></li>
 					<li><div class="project-item"><div class="w1024"><a href="#"><span></span>4 to 6 storey: Model houses, Solid houses</a></div></div></li>
