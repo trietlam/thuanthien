@@ -6,6 +6,13 @@
     animatedcollapse.toggle(toogledId);
 }
 
+function selectCategoryMenu(toogledId)
+{
+	var id = '#' + toogledId;
+    $(id).parent().find('.menu-background-3').removeClass('selected');
+    $(id).prev().addClass('selected');
+    animatedcollapse.toggle(toogledId);
+}
 function selectMainMenu(menuId, toogledId) {
     var id = '#' + menuId;
     if ($(id).hasClass('selected')) {
