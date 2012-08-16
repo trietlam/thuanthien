@@ -4,6 +4,9 @@
 	position: relative;
 }
 
+.padding-left{
+	padding-left:30px;
+}
 .menu-background-2{
 	/*background-color:rgb(164,159,149);*/
 	background-color:rgb(151, 141, 129);
@@ -28,6 +31,7 @@
 .HomePanel{
 	min-width:1024px;
 	width:100%;
+	min-height:1024px;
 }
 .HomeHeaderContainer{
 	height:200px;
@@ -100,8 +104,8 @@
 }
 .tabMenuLink{
 	float:left;
-	margin-left:5px;
-	margin-right:5px;
+
+	margin-right:10px;
 	padding:7px 0px 7px 0px;
 }
 #divContactDetails p{
@@ -127,8 +131,8 @@
 	font-size: 0.9em;
 }
 .project-item a span{
-	width:90px;
+	width:115px;
 	display:inline-block;
-	margin-right:15px;
+	margin-right:40px;
 	text-align:right;
 }
