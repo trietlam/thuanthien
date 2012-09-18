@@ -22,7 +22,10 @@
 		animatedcollapse.addDiv('projectsContainer', 'fade=1, speed=1000, group=mainmenu')
 		animatedcollapse.addDiv('postureContainer', 'fade=1, group=mainmenu')
 		animatedcollapse.addDiv('panelCategory', 'fade=1, group=projects, speed=2000')
+		animatedcollapse.addDiv('panelGeography', 'fade=1, group=projects, speed=2000')
 		animatedcollapse.addDiv('panelContractValue', 'fade=1, group=projects, speed=2000')
+		animatedcollapse.addDiv('panelOrganization', 'fade=1, group=postures, speed=2000')
+		
 		animatedcollapse.addDiv('listAgriculture', 'fade=1, group=projectlist')
 		animatedcollapse.addDiv('listCultural', 'fade=1, group=projectlist')
 		animatedcollapse.addDiv('listTraffic', 'fade=1, group=projectlist')
@@ -56,8 +59,11 @@
     	
     </div>
     <div class="HomeBannerContainer">
-    	<div class="w1024 BannerContainer">
-    		<img src="IMG/panorama.png" alt="panorama.png"/>
+    	<div class="w1024" style="min-height:250px">
+    		<div class="BannerContainer"><img id="imgBanner" src="IMG/panorama.png" alt="panorama.png"/></div>
+    		<div id="loading"></div>
+    		<div onclick="nextImage(true)" class="next-image"></div>
+    		<div class="prev-image" onclick="nextImage(false)"></div>
     	</div>
     </div>
     <div class="HomeMenuContainer w1024">
@@ -68,7 +74,7 @@
     		<div class="menu-background-2" style="overflow:hidden">
     			<div class="w1024 padding-left">
     				<div class="tabMenuLink"><a id="tabMenuCategory" href="javascript:selectTabMenu('projectsContainer','tabMenuCategory','panelCategory')">&nbsp;&nbsp;Category</a></div>
-    				<div class="tabMenuLink"><a id="tabMenuGeography" href="javascript:selectTabMenu('projectsContainer','tabMenuCategory','panelCategory')">&nbsp;&nbsp;Geography</a></div>
+    				<div class="tabMenuLink"><a id="tabMenuGeography" href="javascript:selectTabMenu('projectsContainer','tabMenuGeography','panelGeography')">&nbsp;&nbsp;Geography</a></div>
     				<div class="tabMenuLink"><a id="tabMenuContract" href="javascript:selectTabMenu('projectsContainer','tabMenuContract','panelContractValue')">&nbsp;&nbsp;Contract Value</a></div>
     			</div>
 	    	</div>
@@ -78,11 +84,11 @@
 	    	</div>
 	    	<div class="project-list" id="listAgriculture">
 	    		<ul>
-	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>HOC MON</span>Well drilling systems - Water treatment station</a></div></div></li>
-					<li><div class="project-item"><div class="w1024"><a href="#"><span></span>Main Warehouse - NHI XUAN Manufacture factory of animal feed products</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(HM1)"><span>HOC MON</span>Well drilling systems - Water treatment station</a></div></div></li>
+					<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(HM2)"><span></span>Main Warehouse - NHI XUAN Manufacture factory of animal feed products</a></div></div></li>
     				<li><div class="project-item"><div class="w1024"><a href="#"><span>5th DISTRICT</span>Warehouse - TNXP Investment &amp; Construction Corp</a></div></div></li>
-    				<li><div class="project-item"><div class="w1024"><a href="#"><span>BINH DUONG</span>THANH TAN Chicken farm</a></div></div></li>
-    				<li><div class="project-item"><div class="w1024"><a href="#"><span></span>THANH TAN Pig farm</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(BD1)"><span>BINH DUONG</span>THANH TAN Chicken farm</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(BD2)"><span></span>THANH TAN Pig farm</a></div></div></li>
     				<li><div class="project-item"><div class="w1024"><a href="#"><span>TAN PHU</span>Printing factory - KHUYEN HOC PHIA NAM Printing company</a></div></div></li>
 
 	    		</ul>
@@ -102,11 +108,11 @@
 	    		<ul>
 	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>VUNG TAU</span>Service Roads - SON THUY Resort</a></div></div></li>
 	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>RACH CHIEC</span>Pillars signal, pillars lamp foundation - SAIGON river &amp; DONG NAI river connexion through RACH CHIEC waterway</a></div></div></li>
-	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>CAT LAI</span>Provisional Road - CAT LAI Residence area</a></div></div></li>
-	    			<li><div class="project-item"><div class="w1024"><a href="#"><span></span>Third Cell Leveling, area 50ha - CAT LAI Residence area</a></div></div></li>
-	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>DA NANG</span>Retaining walls and reinforced talus roof 6th section - BAI BUT beach resort</a></div></div></li>
-	    			<li><div class="project-item"><div class="w1024"><a href="#"><span></span>Bending Retaining walls 15th section - BAI BUT beach resort</a></div></div></li>
-	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>BINH DUONG</span>Service roads - THANH TAN farm</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(CL1)"><span>CAT LAI</span>Provisional Road - CAT LAI Residence area</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(CL2)"><span></span>Third Cell Leveling, area 50ha - CAT LAI Residence area</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(DN2)"><span>DA NANG</span>Retaining walls and reinforced talus roof 6th section - BAI BUT beach resort</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(DN1)"><span></span>Bending Retaining walls 15th section - BAI BUT beach resort</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(BD5)"><span>BINH DUONG</span>Service roads - THANH TAN farm</a></div></div></li>
 	    		</ul>
 	    	</div>
 	    	<div class="menu-background-3">
@@ -115,9 +121,9 @@
 	    	<div class="project-list" id="listServices">
 	    		<ul>
 	    			<li><div class="project-item"><div class="w1024"><a href="#"><span>BINH DUONG</span>Multi-fonction activities rooms - Education training &amp; employment setlement 4th School</a></div></div></li>
-    				<li><div class="project-item"><div class="w1024"><a href="#"><span></span>Disinfection area, Water tower, Pwer transformers, Water treatment station - THANH TAN Pig farm</a></div></div></li>
-    				<li><div class="project-item"><div class="w1024"><a href="#"><span></span>Heath center, Kitchen, Offices, Workers housing, Service box, Warehouses - THANH TAN Chicken farm</a></div></div></li>
-    				<li><div class="project-item"><div class="w1024"><a href="#"><span>HOC MON</span>Canteen, Health center - NHI XUAN Residence area</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(BD4)"><span></span>Disinfection area, Water tower, Pwer transformers, Water treatment station - THANH TAN Pig farm</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(BD2)"><span></span>Heath center, Kitchen, Offices, Workers housing, Service box, Warehouses - THANH TAN Chicken farm</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(HM3)"><span>HOC MON</span>Canteen, Health center - NHI XUAN Residence area</a></div></div></li>
     				<li><div class="project-item"><div class="w1024"><a href="#"><span></span>Office, Equipment storage, Fence - NHI XUAN Manufacture</a></div></div></li>
 	    		</ul>
 	    	</div>
@@ -137,6 +143,9 @@
 	    	<div class="menu-background-3">
 	    		<div class="w1024 padding-left" >Private housing</div>
 	    	</div>
+	    	</div>
+	    	<div id="panelGeography" style="display:none">
+	    	<div class="w1024"><img src="IMG/geography.jpg" style="width:100%"/></div>
 	    	</div>
 	    	<div id="panelContractValue" style="display:none">
 	    	<div class="menu-background-3">
@@ -204,8 +213,11 @@
 	    	<div class="menu-background-2" style="overflow:hidden">
     			<div class="w1024 padding-left">
     				<div class="tabMenuLink" id="tabMenuProfile"><a href="#">&nbsp;&nbsp;Company Profile</a></div>
-    				<div class="tabMenuLink" id="tabMenuOrganization"><a href="#">&nbsp;&nbsp;Organization Scheme</a></div>
+    				<div class="tabMenuLink" id="tabMenuOrganization"><a  href="javascript:selectTabMenu('postureContainer','tabMenuOrganization','panelOrganization')">&nbsp;&nbsp;Organization Scheme</a></div>
     			</div>
+	    	</div>
+	    	<div id="panelOrganization" style="display:none">
+	    	<div class="w1024"><img src="IMG/organizationscheme.jpg" style="width:100%"/></div>
 	    	</div>
     	</div>
     	<div style="clear:both"></div>
