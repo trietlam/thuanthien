@@ -4,6 +4,17 @@
 	position: relative;
 }
 
+div#loading{
+    margin: auto;
+    position: absolute;
+    z-index: 1000;
+    width: 332px;
+    height: 332px;
+    background: url('../IMG/loading.gif') no-repeat;
+    cursor: wait;
+    display:none;
+    margin:100px 500px;
+}
 .padding-left{
 	padding-left:30px;
 }
@@ -74,6 +85,24 @@
 	overflow:hidden;
 }
 
+.next-image{
+	background-image:url('../IMG/next.jpg');
+	position:absolute;
+	left:1024px;
+	top:50px;
+	width:28px;
+	height:46px;
+	display:none;
+}
+.prev-image{
+	background-image:url('../IMG/prev.jpg');
+	position:absolute;
+	left:-28px;
+	top:50px;
+	width:28px;
+	height:46px;
+	display:none;
+}
 .MainMenu{
 	background:rgb(168,159,150);
 	padding-top:10px;
