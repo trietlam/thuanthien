@@ -165,3 +165,10 @@ div#loading{
 	margin-right:40px;
 	text-align:right;
 }
+
+#divContactDetails p span{
+	width:60px;
+	display:inline-block;
+	color:rgb(168,159,152);
+}
+
