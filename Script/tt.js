@@ -1,8 +1,9 @@
-﻿var imgurl='IMG/Projects/';
-var project1=["1a.jpg","1b.png"];
+﻿var imgurl='../IMG/Projects/';
+var banner=["panorama.png"];
 var HM1=["HM01nuoc.jpg"];
 var HM2=["HM02a.jpg","HM02b.jpg","HM02c.jpg","HM02channuoi.jpg","HM02d.jpg","HM02e.jpg","HM02f.jpg"];
 var HM3=["HM03.jpg","HM04.jpg"];
+var HM4=["HM04.jpg"];
 var HM5=["HM05.jpg"];
 
 var BD1=["BD01.jpg","BD01ga.jpg"];
@@ -11,12 +12,19 @@ var BD3=["BD03heo.jpg","BD03a.jpg","BD03b.jpg","BD03c.jpg"];
 var BD4=["BD04.jpg"];
 var BD5=["BD05.jpg"];
 
+var BT=["BT.jpg"];
 var CL1=["Q201.jpg"];
 var CL2=["Q201a.jpg"];
 
 var DN1=["DN01.jpg","DN01nhanh15.jpg"];
 var DN2=["DN02.jpg","DN02nhanh6.jpg"];
 
+var DDA=["DDA.jpg"];
+var NBG=["NBG01.jpg"];
+var PH=["Privates houses.jpg"];
+var SH=["services houses.jpg"];
+var SR=["services road.jpg"];
+var VT=["VT01.jpg"];
 var index=0;
 var currentproject;
 function selectTabMenu(parentId,menuId,toogledId) {
