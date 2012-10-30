@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Thuan Thien</title>
+    <link href='http://fonts.googleapis.com/css?family=Francois+One|PT+Sans+Narrow' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" type="text/css" href="../Styles/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../Styles/tt.css"/>
+    
+    <script src="../Script/jquery-1.7.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../Script/animatedcollapse.js"> 
+/***********************************************
+* Animated Collapsible DIV v2.4- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+	</script>
+	 <script src="../Script/tt.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+		animatedcollapse.addDiv('divContactDetails', 'fade=1, group=mainmenu')
+		animatedcollapse.addDiv('projectsContainer', 'fade=1, speed=1000, group=mainmenu')
+		animatedcollapse.addDiv('postureContainer', 'fade=1, group=mainmenu')
+		animatedcollapse.addDiv('panelCategory', 'fade=1, group=projects, speed=2000')
+		animatedcollapse.addDiv('panelGeography', 'fade=1, group=projects, speed=2000')
+		animatedcollapse.addDiv('panelContractValue', 'fade=1, group=projects, speed=2000')
+		animatedcollapse.addDiv('panelOrganization', 'fade=1, group=postures, speed=2000')
+		
+		animatedcollapse.addDiv('listAgriculture', 'fade=1, group=projectlist')
+		animatedcollapse.addDiv('listCultural', 'fade=1, group=projectlist')
+		animatedcollapse.addDiv('listTraffic', 'fade=1, group=projectlist')
+		animatedcollapse.addDiv('listServices', 'fade=1, group=projectlist')
+		animatedcollapse.addDiv('listRenovation', 'fade=1, group=projectlist')
+		animatedcollapse.addDiv('list10bil', 'fade=1, group=projectvalue')
+		animatedcollapse.addDiv('list5bil', 'fade=1, group=projectvalue')
+		animatedcollapse.addDiv('list1bil', 'fade=1, group=projectvalue')
+		animatedcollapse.addDiv('list500mil', 'fade=1, group=projectvalue')
+		animatedcollapse.addDiv('listUnder500mil', 'fade=1, group=projectvalue')
+		//additional addDiv() call...
+		animatedcollapse.init()
+	</script>
+</head>
+<body>
+<form id="form1" runat="server">
+<div class="HomePanel">
+    <div class="HomeHeaderContainer">
+			<div class="w1024 HomeHeader">
+				<div id="branding" class="Branding">
+					<img src="../IMG/logott.jpg" alt="logott.jpg"/>
+				</div>
+				<div id="topNavigator" class="TopNavigator">
+					<ul id="languageBar">
+						<li><a href="../index.html"><img src="../IMG/Menu/EN.PNG" alt="Construction"/></a></li>
+						<li><a href="#"><img src="../IMG/Menu/FR.PNG" alt="Construction"/></a></li>
+						<li><a href="/vn/index.html"><img src="../IMG/Menu/VN.PNG" alt="Construction"/></a></li>
+					</ul>
+				</div>
+			</div>
+    	
+    </div>
+    <div class="HomeBannerContainer">
+    	<div class="w1024" style="min-height:250px">
+    		<div class="BannerContainer"><img id="imgBanner" src="../IMG/panorama.png" alt="panorama.png"/></div>
+    		<div id="loading"></div>
+    		<div onclick="nextImage(true)" class="next-image"></div>
+    		<div class="prev-image" onclick="nextImage(false)"></div>
+    	</div>
+    </div>
+    <div class="HomeMenuContainer w1024">
+    	<div class="MainMenu" id="menuProjects">
+    		<div class="w1024 padding-left"><a href="javascript:selectMainMenu('menuProjects','projectsContainer')">PROJETS</a></div>
+    	</div>
+    	<div id="projectsContainer" style="display:none">
+    		<div class="menu-background-2" style="overflow:hidden">
+    			<div class="w1024 padding-left">
+    				<div class="tabMenuLink"><a id="tabMenuCategory" href="javascript:selectTabMenu('projectsContainer','tabMenuCategory','panelCategory')">&nbsp;&nbsp;Catégorie</a></div>
+    				<div class="tabMenuLink"><a id="tabMenuGeography" href="javascript:selectTabMenu('projectsContainer','tabMenuGeography','panelGeography')">&nbsp;&nbsp;Localisation</a></div>
+    				<div class="tabMenuLink"><a id="tabMenuContract" href="javascript:selectTabMenu('projectsContainer','tabMenuContract','panelContractValue')">&nbsp;&nbsp;Valeur du contrat</a></div>
+    			</div>
+	    	</div>
+	    	<div id="panelCategory" style="display:none">
+	    	<div id="categoryHeader" class="menu-background-3">
+	    		<div class="w1024 padding-left"><a href="javascript:selectCategoryMenu('listAgriculture')">Bâtiments industriels et agricultures</a></div>
+	    	</div>
+	    	<div class="project-list" id="listAgriculture">
+	    		<ul>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(HM1)"><span>HOC MON</span>Système de forage - Station traitement d'eau</a></div></div></li>
+					<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(HM2)"><span></span>Entrepôt principal - Usine de production d'aliments d'élevage NHI XUAN</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(banner)"><span>5eme ARRONDISSEMENT</span>Entrepôt du Services Public des Jeunes Bénévoles</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(BD1)"><span>BINH DUONG</span>Elevage de poulets THANH TAN</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(BD3)"><span></span>Elevage de porcs THANH TAN</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(banner)"><span>TAN PHU</span>Entrepôt d'imprimerie KHUYEN HOC PHIA NAM</a></div></div></li>
+
+	    		</ul>
+	    	</div>
+	    	<div class="menu-background-3">
+	    		<div class="w1024 padding-left" ><a href="javascript:selectCategoryMenu('listCultural')">Bâtiments culturels</a></div>
+	    	</div>
+			<div class="project-list" id="listCultural">
+	    		<ul>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(NBG)"><span>HOC MON</span>Monuments des martyrs NGA BA GIONG</a></div></div></li>
+	    		</ul>
+	    	</div>  		
+	    	<div class="menu-background-3">
+	    		<div class="w1024 padding-left" ><a href="javascript:selectCategoryMenu('listTraffic')">Infrastructure - Paysage</a></div>
+	    	</div>
+	    	<div class="project-list" id="listTraffic">
+	    		<ul>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(VT)"><span>VUNG TAU</span>Chemins de desserte - Resort SON THUY</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(banner)"><span>RACH CHIEC</span>Fondation poteaux d'électrique et de signalisation - Projet de liaison les rivières SAIGON et DONG NAI par le chemin fluvial de RACH CHIEC</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(CL1)"><span>CAT LAI</span>Routes provisoires - Zone résidentiel de CAT LAI</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(CL2)"><span></span>Mis à niveau le lot N°3 de la zone résidentiel de 50 ha - Zone résidentiel de CAT LAI</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(DN2)"><span>DA NANG</span>Mur de soutènement et renforcé les pentes talus du Section 6 - Plage resort BAI BUT</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(DN1)"><span></span>Mur de soutènement en flexion et renforcé les pentes talus du Section 15 - Plage resort BAI BUT</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(BD5)"><span>BINH DUONG</span>Chemins de desserte - Fermes d'élevage THANH TAN</a></div></div></li>
+	    		</ul>
+	    	</div>
+	    	<div class="menu-background-3">
+	    		<div class="w1024 padding-left" ><a href="javascript:selectCategoryMenu('listServices')">Bâtiments de services</a></div>
+	    	</div>
+	    	<div class="project-list" id="listServices">
+	    		<ul>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(banner)"><span>BINH DUONG</span>Salles polyvalentes - Ecole de réadaptation et Services de travail N°4</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(BD4)"><span></span>Salles de désinfestation, château d'eau, station d'électricité, station de traitement d'eau - Elevage de porcs THANH TAN</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(BD2)"><span></span>Accueil santé, Cantine, Bureaux, Logements d'employés, Maison de services, Stockage - Elevage de poulets THANH TAN</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(HM3)"><span>HOC MON</span>Clinique, centre de réadaptation, hôtels - Zone résidentiel NHI XUAN</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(HM5)"><span></span>Bureaux, Stockage, Mur de clôture - Usine de production d'aliments d'élevage NHI XUAN</a></div></div></li>
+	    		</ul>
+	    	</div>
+	    	<div class="menu-background-3">
+	    		<div class="w1024 padding-left" ><a href="javascript:selectCategoryMenu('listRenovation')">Rénovation</a></div>
+	    	</div>
+	    	<div class="project-list" id="listRenovation">
+	    		<ul>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(banner)"><span>1ER ARRONDISSEMENT</span>Siège sociale de la société INVESCO</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(banner)"><span></span>Bureaux- Services Publics TNXP</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(banner)"><span>5EME ARRONDISSEMENT</span>Supermarché - Société d'alimentation HAI THIEN</a></div></div></li>
+					<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(banner)"><span>BINH TAN</span>Bureaux- Conseil de gestion et d'investissement du Projet</a></div></div></li>
+					<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(banner)"><span>3EME ARRONDISSEMENT</span>Siège sociale de la société CINCO</a></div></div></li>
+					<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(BT)"><span>BINH THANH</span>Bureaux - THUAN THIEN Investment &amp; Construction Corp</a></div></div></li>
+	    		</ul>
+	    	</div>
+	    	<div class="menu-background-3">
+	    		<div class="w1024 padding-left" >Résidences privées</div>
+	    	</div>
+	    	</div>
+	    	<div id="panelGeography" style="display:none">
+	    	<div class="w1024"><img src="../IMG/geography.jpg" style="width:100%"/></div>
+	    	</div>
+	    	<div id="panelContractValue" style="display:none">
+	    	<div class="menu-background-3">
+	    		<div class="w1024 padding-left"><a href="javascript:selectCategoryMenu('list10bil')">10.000.000.000 ------- 25.000.000.000</a></div>
+	    	</div>
+	    	<div class="project-list" id="list10bil">
+	    		<ul>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(HM4)"><span>HOC MON</span>Clinique, centre de réadaptation, hôtels - Zone résidentiel NHI XUAN</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(HM2)"><span></span>Entrepôt principal - Usine de production d'aliments d'élevage NHI XUAN</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(CL1)"><span>CAT LAI</span>Mis à niveau le lot N°3 de la zone résidentiel de 50 ha - Zone résidentiel de CAT LAI</a></div></div></li>
+	    		</ul>
+	    	</div>
+	    	<div class="menu-background-3">
+	    		<div class="w1024 padding-left"><a href="javascript:selectCategoryMenu('list5bil')">&nbsp;&nbsp;&nbsp;5.000.000.000 ------- 10.000.000.000</a></div>
+	    	</div>
+			<div class="project-list" id="list5bil">
+	    		<ul>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(BD1)"><span>BINH DUONG</span>Elevage de poulets THANH TAN</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(BD3)"><span></span>Elevage de porcs THANH TAN</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(BD2)"><span></span>Accueil santé, Cantine, Bureaux, Logements d'employés, Maison de services, Stockage - Elevage de poulets THANH TAN</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(BD4)"><span></span>Salles de désinfestation, château d'eau, station d'électricité, station de traitement d'eau - Elevage de porcs THANH TAN</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(HM1)"><span>HOC MON</span>Système de forage - Station traitement d'eau</a></div></div></li>	
+	    		</ul>
+	    	</div>  		
+	    	<div class="menu-background-3">
+	    		<div class="w1024 padding-left" ><a href="javascript:selectCategoryMenu('list1bil')">&nbsp;&nbsp;&nbsp;1.000.000.000 ------- 5.000.000.000</a></div>
+	    	</div>
+	    	<div class="project-list" id="list1bil">
+	    		<ul>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(DDA)"><span>PHU NHUAN</span>Complex Residence - 321 DAO DUY ANH</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(NBG)"><span>HOC MON</span>Monuments des martyrs NGA BA GIONG</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(DN2)"><span>DA NANG</span>Mur de soutènement et renforcé les pentes talus du Section 6 - Plage resort BAI BUT</a></div></div></li>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(banner)"><span>1st DISTRICT</span>Bureaux- Services Publics TNXP</a></div></div></li>
+	    		</ul>
+	    	</div>
+	    	<div class="menu-background-3">
+	    		<div class="w1024 padding-left" ><a href="javascript:selectCategoryMenu('list500mil')">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;500.000.000 ------- 1.000.000.000</a></div>
+	    	</div>
+	    	<div class="project-list" id="list500mil">
+	    		<ul>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(DN2)"><span>DA NANG</span>Mur de soutènement et renforcé les pentes talus du Section 6 - Plage resort BAI BUT</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(banner)"><span>3rd DISTRICT</span>Siège sociale de la société CINCO</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(banner)"><span>5th DISTRICT</span>Supermarché - Société d'alimentation HAI THIEN</a></div></div></li>
+    				<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(banner)"><span>1st DISTRICT</span>Siège sociale de la société INVESCO</a></div></div></li>
+	    		</ul>
+	    	</div>
+	    	<div class="menu-background-3">
+	    		<div class="w1024 padding-left" ><a href="javascript:selectCategoryMenu('listUnder500mil')">Under 500.000.000</a></div>
+	    	</div>
+	    	<div class="project-list" id="listUnder500mil">
+	    		<ul>
+	    			<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(PH)"><span></span>1 to 3 storey: Private housing</a></div></div></li>
+					<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(HM4)"><span></span>4 to 6 storey: Model houses, Solid houses</a></div></div></li>
+					<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(BT)"><span></span>Office renovation</a></div></div></li>
+					<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(SH)"><span></span>Warehouse, Service building</a></div></div></li>
+					<li><div class="project-item"><div class="w1024"><a href="javascript:displayProject(SR)"><span></span>Service road, Landscape</a></div></div></li>
+	    		</ul>
+	    	</div>
+	    	</div>	    	
+    	</div>
+    	<div class="MainMenu" id="menuPosture">
+    		<div class="w1024 padding-left"><a href="javascript:selectMainMenu('menuPosture','postureContainer')">POSTURE</a></div>
+    	</div>
+    	<div id="postureContainer" style="display:none">
+	    	<div class="menu-background-2" style="overflow:hidden">
+    			<div class="w1024 padding-left">
+    				<div class="tabMenuLink" id="tabMenuProfile"><a href="#">&nbsp;&nbsp;Brève introduction</a></div>
+    				<div class="tabMenuLink" id="tabMenuOrganization"><a  href="javascript:selectTabMenu('postureContainer','tabMenuOrganization','panelOrganization')">&nbsp;&nbsp;Schéma d'organisation</a></div>
+    			</div>
+	    	</div>
+	    	<div id="panelOrganization" style="display:none">
+	    	<div class="w1024"><img src="../IMG/organizationscheme.jpg" style="width:100%"/></div>
+	    	</div>
+    	</div>
+    	<div style="clear:both"></div>
+    	
+    	<div class="MainMenu" id="menuContact">
+    		<div class="w1024 padding-left"><a href="javascript:selectMainMenu('menuContact','divContactDetails')">CONTACT</a></div>
+    	</div>
+    	<div id="contactDetailsContainer" class="w1024">
+    		<div id="divContactDetails" class="leftMargin" style="display:none">
+    			<p><span>Pour plus d'information, merci de contacter:</span></p>
+    			<p>THUAN THIEN construction | <span>Adresse:</span> 434/2A rue Binh Quoi</p>
+    			<p style="padding-left:145px"><span></span>F.28 Arrondissement Binh Thanh HCM ville</p>
+				<p style="padding-left:145px"><span>Téléphone:</span> 08 35564203 (Comptabilité/Secrétaire)</p>
+				<p style="padding-left:145px"><span></span> 08 35564204 (Bureau d'étude/Design)</p>
+				<p style="padding-left:145px"><span>Fax:</span> 08 35564202</p>
+				<p style="padding-left:145px"><span>Email:</span> thuanthienconstruction@yahoo.com (Comptabilité/Secrétaire)</p>
+				<p style="padding-left:145px"><span></span> thuanthienconstruction@gmail.com (Bureau d'étude/Design)</p>
+    		</div>
+    	</div>
+    </div>
+</div>
+</form>
+</body>
+        
